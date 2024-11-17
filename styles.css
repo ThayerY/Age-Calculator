@@ -9,7 +9,6 @@ body {
 }
 
 .container {
-  /* background-color: #a5a1a1; */
   background-color: #2f2fa3;
   padding: 2rem;
   border-radius: 10px;
@@ -49,21 +48,43 @@ input[type="date"]:focus {
   border-color: #83a4d4;
 }
 
-button {
-  width: 100%;
-  padding: 1rem;
-  background-color: #0d5304b7;
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.calculate-btn {
+  background-color: #059105b6;
   color: white;
   border: none;
   border-radius: 5px;
+  padding: 1rem;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-button:hover {
+.calculate-btn:hover {
   background-color: #6b8cb3;
 }
+
+.reset-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #c0392b;
+}
+
 
 .result {
   margin-top: 1.5rem;

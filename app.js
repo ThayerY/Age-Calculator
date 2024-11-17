@@ -47,3 +47,20 @@ const displayResults = (years, months, days) => {
   const resultDiv = document.getElementById('result');
   resultDiv.classList.add('show');
 }
+
+const resetCalculator = () => {
+  // Clear the input
+  document.getElementById('birthdate').value = '';
+
+  // Hide the result section with animation
+  const resultDiv = document.getElementById('result');
+  resultDiv.classList.remove('show');
+
+  // Reset the numbers
+  document.getElementById('years').textContent = '0';
+  document.getElementById('months').textContent = '0';
+  document.getElementById('days').textContent = '0';
+
+  // Clear the message
+  document.getElementById('ageMessage').textContent = '';
+}
